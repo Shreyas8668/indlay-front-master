@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "target": "es2015",  // or higher (es2015, es2016, etc.)
+    "downlevelIteration": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+    
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/dashboard/layout.tsx",
+    "src/app/dashboard/properties/update/[id]/UpdateProperty.jsx",
+    "src/app/dashboard/properties/page.jsx",
+    "src/app/dashboard/properties/add/AddProperty.jsx",
+    "src/app/dashboard/services/add/AddService.jsx",
+    "src/components/Table/Table.jsx",
+    "src/app/dashboard/facilities/page.jsx",
+    "src/app/dashboard/users/page.jsx",
+    "src/components/atoms/DashBoardInput.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
